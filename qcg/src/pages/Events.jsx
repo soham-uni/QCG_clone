@@ -1,9 +1,8 @@
 function Events() {
     return (
-    <>
+    <div className="page-container">
     <h1>Events</h1>
-    <h2></h2>
-    </>
+    </div>
     )
   }
   

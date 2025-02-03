@@ -16,7 +16,6 @@ function App() {
   return (
     <Router> {/* Wrap Router around your app */}
       <Navbar />  {/* Now Navbar works inside Router */}
-      <h1>QCG</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

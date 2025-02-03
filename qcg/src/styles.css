@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Resetting margins and padding globally */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,10 @@
   }
   
   body {
-    background-color: #1a1a1a;
+    background-image: url('./components/6874075.jpg');
+  background-size: cover;  /* Ensures the background image covers the entire screen */
+  background-position: center;  /* Centers the background image */
+  background-attachment: fixed;  /* Makes the background fixed while scrolling */
     color: #e0e0e0;
     min-height: 100vh;
     display: flex;
@@ -18,7 +21,6 @@
     padding-top: 80px; /* Ensure body starts below the navbar */
   }
   
-  /* Page Container */
   .page-container {
     text-align: center;
     width: 100%;
@@ -28,11 +30,12 @@
     box-sizing: border-box;
   }
   
-  /* Navbar Styles */
+  /* Navbar Styling */
   .navbar {
     background-color: #2e003e;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Adjust to space items apart */
+    align-items: center; /* Vertically align items */
     padding: 20px;
     position: fixed;
     top: 0;
@@ -63,7 +66,13 @@
     border-radius: 5px;
   }
   
-  /* Purple-Black Theme */
+  /* Logo Styling */
+  .navbar .logo {
+    height: 40px; /* Adjust size as needed */
+    margin-right: 20px;
+  }
+  
+  /* Centering the page heading */
   h1 {
     color: #9c1aff;
     font-size: 3rem;
@@ -79,7 +88,7 @@
     color: #5e00b5;
   }
   
-  /* Footer */
+  /* Footer Styling */
   footer {
     background-color: #2e003e;
     color: #e0e0e0;
@@ -97,5 +106,44 @@
   
   footer a:hover {
     color: #5e00b5;
+  }
+  
+  /* Navbar Links: Aligning Links Horizontally and Centering */
+  .navbar ul {
+    display: flex;
+    justify-content: center; /* Horizontally center the navigation items */
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px; /* Add some space between each link */
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #5e00b5;
+    color: white; /* Change text color when hovered */
+    transform: scale(1.1); /* Zoom effect */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* Make the navbar links stack on smaller screens */
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul li {
+      margin-bottom: 10px; /* Reduce margin between links */
+    }
   }
   

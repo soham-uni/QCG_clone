@@ -1,8 +1,8 @@
 function Blogs() {
     return (
     <>
-    <h1>Blogss</h1>
-    <h2></h2>
+    <h1>Blogs</h1>
+    <div className="page-container"> we bloggin with this one</div>
     </>
     )
   }
