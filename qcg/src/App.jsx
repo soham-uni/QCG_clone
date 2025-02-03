@@ -8,7 +8,7 @@ import Blogs from "./pages/Blogs";
 import Events from "./pages/Events";
 import Github from "./pages/Github";
 import Resources from "./pages/Resources";
- 
+import './styles.css';
 
 function App() {
   const [count, setCount] = useState(0);

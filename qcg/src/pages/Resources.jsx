@@ -1,7 +1,7 @@
 function Resources() {
     return (
     <>
-    <h2>Resources</h2>
+    <h1>Resources</h1>
     </>
     )
   }
