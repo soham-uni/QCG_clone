@@ -7,7 +7,7 @@
   }
   
   body {
-    background-image: url('./components/6874075.jpg');
+    background-image: url('./components/chip.jpg');
   background-size: cover;  /* Ensures the background image covers the entire screen */
   background-position: center;  /* Centers the background image */
   background-attachment: fixed;  /* Makes the background fixed while scrolling */
@@ -45,6 +45,13 @@
     height: 80px; /* Set height of the navbar */
     width: 100%;
     box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(46, 0, 62, 0.9);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease-in-out;
   }
   
   .navbar a {
@@ -145,5 +152,21 @@
     .navbar ul li {
       margin-bottom: 10px; /* Reduce margin between links */
     }
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    background: rgba(155, 89, 182, 0.8); /* Neon Purple */
+    box-shadow: 0 0 10px rgba(155, 89, 182, 1);
+    transform: scale(1.1);
   }
   

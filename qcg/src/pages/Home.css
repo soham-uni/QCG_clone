@@ -1,0 +1,122 @@
+/* Ensure the common background remains unaffected */
+.home-container {
+    text-align: center;
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7); /* Dark Glass Effect on top of background */
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5); /* Neon Glow */
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative; /* Ensures it's layered above the background */
+  }
+  
+  /* Title Styling */
+  .home-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #00d0ff; /* Neon Cyan */
+    text-shadow: 0px 0px 20px #00d0ff;
+  }
+  
+  /* Tagline (With Glowing Effect) */
+  .home-tagline {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ff69b4; /* Neon Pink */
+    text-shadow: 0px 0px 15px #ff69b4;
+    animation: glowText 2s infinite alternate;
+  }
+  
+  /* Highlighted Text */
+  .highlight {
+    color: #00ffcc;
+    text-shadow: 0px 0px 10px #00ffcc;
+  }
+  
+  /* Content Styling */
+  .home-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 30px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Features Section */
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  /* Feature Cards */
+  .feature-card {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+  }
+  
+  .feature-card h2 {
+    color: #00ffcc;
+  }
+  
+  .feature-card p {
+    color: #ccc;
+  }
+  
+  /* Hover Effect */
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 25px rgba(255, 69, 0, 0.8);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes glowText {
+    from {
+      text-shadow: 0px 0px 15px #ff69b4;
+    }
+    to {
+      text-shadow: 0px 0px 25px #ff1493;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .home-title {
+      font-size: 2.5rem;
+    }
+  
+    .home-tagline {
+      font-size: 1.3rem;
+    }
+  }
+  

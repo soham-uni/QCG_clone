@@ -1,32 +1,109 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Container */
 .navbar {
-    background: #333;
-    padding: 10px 20px;
-    position: fixed; /* Stays at top */
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  background: linear-gradient(135deg, #1a001f, #4b0082); /* Black-Purple Gradient */
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(92, 0, 128, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo Styling */
+.logo {
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation Menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Button-Like Navigation Items */
+.nav-links li {
+  display: inline-block;
+}
+
+/* Cool Button-Like Links */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: rgba(75, 0, 130, 0.3);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px rgba(147, 112, 219, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button Hover Effect */
+.nav-links a:hover {
+  color: #ffddff;
+  background: rgba(147, 112, 219, 0.6);
+  border: 2px solid #bb00ff;
+  box-shadow: 0 0 15px rgba(187, 0, 255, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Glowing Underline Animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: #bb00ff;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Active Page Effect */
+.nav-links a.active {
+  background: rgba(147, 112, 219, 0.8);
+  color: white;
+  border: 2px solid #ffddff;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
   }
-  
+
   .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+      flex-direction: column;
+      gap: 15px;
   }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-  }
-  
-  .nav-links a:hover {
-    color: #ff9800;
-  }
-  
+}

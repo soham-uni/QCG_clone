@@ -1,11 +1,19 @@
+import React from "react";
+import "./Github.css";
+
 function Github() {
-    return (
-    <div className="page-container">
-    <a href="https://github.com/qcgiitr">Click to get to the github acc</a>
-    <h2></h2>
+  return (
+    <div className="github-container">
+      <a
+        href="https://github.com/qcgiitr"
+        className="github-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Click to get to the GitHub account
+      </a>
     </div>
-    )
-  }
-  
-  export default Github;
-  
+  );
+}
+
+export default Github;

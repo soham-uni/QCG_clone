@@ -1,14 +1,26 @@
+import React from "react";
+import "./About.css";
+
 function About() {
-    return (
-    <div className="page-container">
-        <h1>About Our Club</h1>
-        <div className="page-container">
-We work around Quantum Machine Learning|
-Quantum Computing Group is a student-run group to inculcate and uplift the culture of quantum computing at IIT Roorkee. Founded in 2020, QCG is currently a part of ACM IIT Roorkee Student Chapter. Our members have varied interests and skills in different domains of quantum computing and attempt to elevate the technological standing of the campus populace in those specialisations. We do so by organising concept discussions, hands-on workshops, open projects and an annual quantum computing hackathon that gives the 
-students exposure to the advancements in the quantum computing sphere.</div>
+  return (
+    <div className="about-container">
+      <h1 className="about-title">About Our Club</h1>
+      <div className="about-content">
+        <p className="about-highlight">
+          We work around <span>Quantum Machine Learning</span> | 
+        </p>
+        <p className="about-description">
+          Quantum Computing Group is a student-run organization dedicated to fostering and advancing quantum computing at IIT Roorkee. 
+          Established in 2020, QCG is now a part of the ACM IIT Roorkee Student Chapter.
+        </p>
+        <p className="about-description">
+          Our members explore various aspects of quantum computing and aim to elevate the technological proficiency of the student community. 
+          We conduct concept discussions, hands-on workshops, open projects, and an **annual Quantum Computing Hackathon** to provide students 
+          with exposure to cutting-edge advancements in quantum computing.
+        </p>
+      </div>
     </div>
-    );
-  }
-  
-  export default About;
-  
+  );
+}
+
+export default About;

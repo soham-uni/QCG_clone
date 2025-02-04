@@ -1,0 +1,76 @@
+/* About Page Styles */
+.about-container {
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7); /* Adds transparency for better readability */
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Title Styling */
+  .about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #00d0ff; /* Neon cyan color */
+    text-shadow: 0px 0px 10px #00d0ff;
+  }
+  
+  /* Highlight Text */
+  .about-highlight {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff69b4; /* Neon pink */
+    margin-bottom: 20px;
+  }
+  
+  .about-highlight span {
+    color: #00ffcc;
+    text-shadow: 0px 0px 8px #00ffcc;
+  }
+  
+  /* Description */
+  .about-description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #ccc;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 30px;
+    }
+  
+    .about-title {
+      font-size: 2.5rem;
+    }
+  
+    .about-highlight {
+      font-size: 1.5rem;
+    }
+  
+    .about-description {
+      font-size: 1.2rem;
+    }
+  }
+  
